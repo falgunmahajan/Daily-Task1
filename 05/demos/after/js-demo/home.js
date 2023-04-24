@@ -1,5 +1,5 @@
 
-let price=12;
-price%=5;
-showMessage(price);
+let price=12,
+    taxRate=0.07;
+showMessage(price * taxRate);
 
