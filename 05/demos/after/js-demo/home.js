@@ -1,4 +1,5 @@
 
 let price=20.99;
-showMessage(typeof price);
+price=price+1;
+showMessage(price);
 
