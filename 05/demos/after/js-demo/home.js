@@ -1,7 +1,7 @@
 
-let price=49.99;
-let name = 'Hiking Boots';
-let discounted = false;
+let price = 49.99,
+    name = 'Hiking Boots',
+    discounted = false;
 
-showMessage(discounted);
+showMessage(name);
 
