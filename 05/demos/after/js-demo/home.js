@@ -1,4 +1,4 @@
 
-let price=(3+2)*2;
+let price=1.1+1.3;
 showMessage(price);
 console.log(price)
