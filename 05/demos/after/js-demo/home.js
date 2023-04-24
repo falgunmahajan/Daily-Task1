@@ -1,5 +1,5 @@
 
-const price=20;
+var price=25;
 
 showMessage(price);
 
