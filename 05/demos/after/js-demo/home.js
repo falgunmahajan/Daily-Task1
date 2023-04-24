@@ -1,6 +1,6 @@
 
 let message='Hello';
-message=message.toUpperCase();
+message=message.substring(1,4);
 showMessage(message);
 
 
