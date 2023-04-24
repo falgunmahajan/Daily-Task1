@@ -1,5 +1,4 @@
 
-let price=12,
-    taxRate=0.07;
-showMessage(price * taxRate);
-
+let price=12;
+showMessage(--price);
+console.log(price)
