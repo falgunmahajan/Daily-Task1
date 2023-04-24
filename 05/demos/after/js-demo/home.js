@@ -1,4 +1,4 @@
 
-let price=1.1+1.3;
-showMessage(price);
-console.log(price)
+let amount=20- (-2);
+showMessage(amount);
+
