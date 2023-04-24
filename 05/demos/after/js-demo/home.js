@@ -1,8 +1,6 @@
-let name="Andrea"
-let message=`Hello
 
-
-${name}`;
+let message='Hello';
+message=message+' world'
 showMessage(message);
-console.log(message);
+
 
