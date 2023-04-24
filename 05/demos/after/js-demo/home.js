@@ -1,7 +1,5 @@
 
-let price = 49.99,
-    name = 'Hiking Boots',
-    discounted = false;
+let _times 99 = 99;
 
-showMessage(name);
+showMessage(_times 99);
 
