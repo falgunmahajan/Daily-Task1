@@ -1,5 +1,5 @@
 
 let price=12;
-price=price/3;
+price=price%5;
 showMessage(price);
 
