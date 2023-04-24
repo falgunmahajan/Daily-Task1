@@ -1,5 +1,5 @@
 
-let _times 99 = 99;
+let let = 99;
 
-showMessage(_times 99);
+showMessage(let);
 
