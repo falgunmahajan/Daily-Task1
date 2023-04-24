@@ -1,6 +1,6 @@
 
-let price = 99.99;
-price = 49.99;
+let price;
+price = 59.99;
 showMessage(price);
 
 
