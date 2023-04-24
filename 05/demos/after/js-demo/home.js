@@ -1,5 +1,6 @@
 
-let let = 99;
+let price;
 
-showMessage(let);
+showMessage(price);
+console.log(price);
 
