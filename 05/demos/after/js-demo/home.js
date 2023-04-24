@@ -1,5 +1,5 @@
 
-let price=20.99;
-price=price-1;
+let price=12;
+price=price*3;
 showMessage(price);
 
