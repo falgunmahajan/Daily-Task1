@@ -1,6 +1,6 @@
 
-let price=20;
+/*let price;
 showMessage(price);
-console.log(price);
-console.log(typeof(price));
-console.log(isNaN(price));
+console.log(price);*/
+var a='Falgun';
+console.log(a)
