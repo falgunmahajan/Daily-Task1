@@ -1,6 +1,6 @@
 
-let message='123';
-
-showMessage(message+2);
+let amount=123;
+amount=amount.toString();
+showMessage(typeof amount);
 
 
