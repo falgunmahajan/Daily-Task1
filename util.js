@@ -25,52 +25,52 @@ for(var i in obj)
 
 
 
-var obj1={
-    "Name":"Falgun",
-    "location":{
-        "city":"Jammu",
-        "pincode":180001
-    }
-};
+// var obj1={
+//     "Name":"Falgun",
+//     "location":{
+//         "city":"Jammu",
+//         "pincode":180001
+//     }
+// };
 
-var obj2={
-    "Name":"Falgun",
-    "location":{
-        "city":"Jammu",
-        "pincode":180001
-    }
-};
-var obj=[obj1,obj2]
-for(var i of obj)
-{
-    for(var j in i)
-    {
+// var obj2={
+//     "Name":"Falgun",
+//     "location":{
+//         "city":"Jammu",
+//         "pincode":180001
+//     }
+// };
+// var obj=[obj1,obj2]
+// for(var i of obj)
+// {
+//     for(var j in i)
+//     {
 
-        if(typeof i[j]== "object")
-        {
+//         if(typeof i[j]== "object")
+//         {
              
-        for(var k in i[j])
-        {
-            if(k=="pincode")
-            console.log(i[j][k])
-        }
-    }
-        else
-        {
-        console.log(i[j])
-       }
-    }
-}
+//         for(var k in i[j])
+//         {
+//             if(k=="pincode")
+//             console.log(i[j][k])
+//         }
+//     }
+//         else
+//         {
+//         console.log(i[j])
+//        }
+//     }
+// }
 
 
 
 
 
-let a=[{Name:"falgun"},{lastName:"Mahajan"}]
-for(var i of a)
-{
-    for(var j in i)
-    {
-        console.log(i[j]);
-    }
-}
+// let a=[{Name:"falgun"},{lastName:"Mahajan"}]
+// for(var i of a)
+// {
+//     for(var j in i)
+//     {
+//         console.log(i[j]);
+//     }
+// }

@@ -1,5 +1,6 @@
+'use strict';
 
-productId=134
-console.log(productId);
-let productId=12;
+let productId = 1234;
+console.log(productId)
+
 
