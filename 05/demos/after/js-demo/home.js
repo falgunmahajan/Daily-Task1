@@ -1,5 +1,5 @@
 
-let saved = true;
-showMessage(saved);
+let saved = false;
+showMessage(typeof saved);
 
 
