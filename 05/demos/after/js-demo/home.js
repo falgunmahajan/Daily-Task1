@@ -1,6 +1,6 @@
 
-let amount=Number.parseFloat("123.45");
+let amount=Number.parseFloat("56A23.45");
 
-showMessage(typeof amount);
+showMessage( amount);
 
 
