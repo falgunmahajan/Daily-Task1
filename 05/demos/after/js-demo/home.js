@@ -1,7 +1,12 @@
-let productId=12345;
+const app = {
+    productId:12345,
+    userName:'Joe',
+    orderNumber:789
+};
+
 function showProductId()
 {
-    console.log(productId);
+    console.log(app.userName);
 }
 
 showProductId();
