@@ -1,5 +1,6 @@
 
 let saved = false;
-showMessage(typeof saved);
+saved=!saved;
+showMessage(saved);
 
 
