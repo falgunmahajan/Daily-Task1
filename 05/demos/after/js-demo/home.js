@@ -1,9 +1,9 @@
 
-function showProductId()
+function showProductId(productId)
 {
-    let  productId = 12345;
-    console.log(productId);
+    //let  productId = 12345;
+    //console.log(productId);
 }
-
-showProductId();
+console.log(productId);
+showProductId(125324);
 
