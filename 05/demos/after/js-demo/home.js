@@ -1,6 +1,6 @@
 
-let message='Hello';
-message=message.length;
-showMessage(typeof message);
+let message='123';
+
+showMessage(message+2);
 
 
