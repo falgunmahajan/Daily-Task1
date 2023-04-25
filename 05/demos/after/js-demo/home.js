@@ -1,7 +1,8 @@
-let person={
-    firstName:"Falgun",
-    lastName:"Mahajan"
-};
-showMessage(person.firstName +" "+ person.lastName);
+let productId=12345;
+function showProductId()
+{
+    console.log(productId);
+}
 
+showProductId();
 
