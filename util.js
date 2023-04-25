@@ -61,3 +61,16 @@ for(var i of obj)
        }
     }
 }
+
+
+
+
+
+let a=[{Name:"falgun"},{lastName:"Mahajan"}]
+for(var i of a)
+{
+    for(var j in i)
+    {
+        console.log(i[j]);
+    }
+}

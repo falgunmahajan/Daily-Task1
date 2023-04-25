@@ -1,25 +1,17 @@
 
-function showProductId(productId)
+function showProductId()
 {
     let  productId = 12345;
 
     function fix()
     {
         let productId = 46367;
-        console.log()
+        console.log("in fix: "+productId);
     }
+    fix();
     
-    
-    console.log(productId);
+    console.log("in showProductId: "+productId);
 }
 
-showProductId(125324);
-console.log(productId);
-let a=[{Name:"falgun"},{lastName:"Mahajan"}]
-for(var i of a)
-{
-    for(var j in i)
-    {
-        console.log(i[j]);
-    }
-}
+showProductId();
+
