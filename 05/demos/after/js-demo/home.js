@@ -1,6 +1,4 @@
-if(true)
+for(let i=0; i<5; i++)
 {
-    var value="yes";
-    showMessage(value);
+    console.log(i);
 }
-console.log(value)
