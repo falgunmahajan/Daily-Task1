@@ -1,9 +1,7 @@
-let state='Fl';
-let taxPercent=0;
-if(state==="Fl")
+
+if(+(1.1+1.3 ).toFixed(2)==2.4)
 {
-    taxPercent=7;
+    showMessage("true");
 }
-console.log(taxPercent);
 
 
