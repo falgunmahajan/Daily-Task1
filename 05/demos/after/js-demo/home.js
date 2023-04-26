@@ -1,6 +1,3 @@
-let i=-4;
-do{
-    console.log(i)
-    i--;
-}
-while(i>0);
+let values=Array.of(1,2,3);
+console.log(values)
+console.log(Array.isArray(values));
