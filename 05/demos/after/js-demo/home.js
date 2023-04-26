@@ -1,6 +1,9 @@
-'use strict';
-
-let productId = 1234;
-console.log(productId)
+let state='Fl';
+let taxPercent=0;
+if(state==="Fl")
+{
+    taxPercent=7;
+}
+console.log(taxPercent);
 
 
