@@ -1,8 +1,16 @@
 
-if(+(1.1+1.3 ).toFixed(2)==2.4)
+let price=10;
+if(price<10)
 {
-    message="hello";
-    showMessage(message);
+    showMessage("less than 10");
+}
+else if(price>10)
+{
+    showMessage('greater than 10');
+}
+else if(price==10)
+{
+    showMessage("equal to 10")
 }
 
 
