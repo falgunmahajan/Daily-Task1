@@ -1,16 +1,9 @@
-
-let price=10;
-if(price<10)
+if(1==="1")
 {
-    showMessage("less than 10");
+    showMessage(true);
 }
-else if(price>10)
-{
-    showMessage('greater than 10');
-}
-else if(price==10)
-{
-    showMessage("equal to 10")
+else{
+    showMessage(false);
 }
 
 
