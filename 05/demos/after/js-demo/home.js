@@ -1,24 +1,18 @@
-let myFunction = function(message,firstName)
-{
-    console.log(message)
-    console.log(firstName)
-}
-myFunction('Hello','Falgun');
 
-let key = 42;
-function getSecretCode(value)
-{
-    let keyGenerator = function()
+
+let person = {
+    name:'John',
+    age:32,
+    partTime:false,
+    showInfo:function(name)
     {
-        let key=12;
-        console.log("in keyGenertor:", key);
-        return key
+        showMessage(name);
     }
-    let code = value*keyGenerator();
-    console.log("in getSecretCode:", key);
-    return code;
-}
-let secretCode = getSecretCode(2)
-showMessage(secretCode);
+};
+// person.name="Falgun";
+// person['age']=22
+// showMessage(person.name+" "+person['age']);
+person.showInfo(24);
+changePercentOff(typeof person.showInfo)
 
-changePercentOff(50)
+
