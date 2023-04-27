@@ -1,15 +1,7 @@
+let now = new Date();
+showMessage(now.toDateString());
 
-
-let person = {
-    name:'John',
-    age:32,
-    partTime:false,
-};
-function incrementAge(person)  
-{
-    person.age++;
-}
-incrementAge(person);
-showMessage(person.age);
-
-
+//changePercentOff(Math.abs(-42));
+changePercentOff(Math.random());
+let s = 'hello'
+showMessage(s.charAt(1))
