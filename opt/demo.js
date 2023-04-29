@@ -6,8 +6,5 @@
       lastName : 'Mahajan',
       age : 24,
     };
-   for(var propertyName in person)
-   {
-    display(propertyName+ " : " +person[propertyName])
-   }
+  display(Object.getOwnPropertyDescriptor(person,"firstName"));
 })();
