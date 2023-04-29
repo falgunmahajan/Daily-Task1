@@ -1,16 +1,16 @@
 'use strict'; 
 (function() {
 
-    function Person(firstName,lastName,age)
-    {
-      this.firstName=firstName;
-      this.lastName=lastName;
-      this.age=age;
-      this.isAdult=function(){return this.age>=25;}
-    }
-    let falak=new Person("Falak", 'Mahajan',27);
-    
-    let manas=new Person("Manas", 'Mahajan',20);
-    display(falak.isAdult())
-    display(manas.isAdult())
+    let person1={
+      firstName : 'Falgun',
+      lastName : 'Mahajan',
+      age : 24,
+    };
+    let person2=Object.create(Object.prototype,{
+      firstName:{value:'Falgun', enumerable:true, writable:true,configurable:true},
+      lastName:{value:'Mahajan', enumerable:true, writable:true,configurable:true},
+      age:{value:24, enumerable:true, writable:true,configurable:true}
+    })
+    display(person1);
+    display(person2);
 })();
