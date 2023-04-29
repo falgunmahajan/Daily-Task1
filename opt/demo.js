@@ -2,25 +2,23 @@
 (function() {
 
     let person={
-      firstName : 'Falgun',
+      firstName : 'Mayuri',
       lastName : 'Mahajan',
-      age : 24,
+      age : 18,
       isAdult()
       {
         return this.age>=18
       }
     };
-    let person1=person;
-    // let person1={
-    //   firstName : 'Falgun',
-    //   lastName : 'Mahajan',
-    //   age : 24,
-    //   isAdult()
-    //   {
-    //     return this.age>=18
-    //   }
-    // };
-    display(person1==person)
-    display(person1===person)
-    display(Object.is(person1,person))
+    let healthStats = {
+      height : 68,
+      weight: 150
+    };
+    function mergeHealthStats(person,healthStats)
+    {
+      return Object.assign({},person,healthStats)
+    }
+    let mergedPerson = mergeHealthStats(person,healthStats)
+    display(mergedPerson)
+    display(person)
 })();
