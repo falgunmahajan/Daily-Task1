@@ -10,8 +10,17 @@
         return this.age>=18
       }
     };
-    for (var propertyName in person)
-    {
-      display(propertyName);
-    }
+    let person1=person;
+    // let person1={
+    //   firstName : 'Falgun',
+    //   lastName : 'Mahajan',
+    //   age : 24,
+    //   isAdult()
+    //   {
+    //     return this.age>=18
+    //   }
+    // };
+    display(person1==person)
+    display(person1===person)
+    display(Object.is(person1,person))
 })();
