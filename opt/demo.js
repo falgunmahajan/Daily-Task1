@@ -1,20 +1,17 @@
 'use strict'; 
 (function() {
 
-  function registerUser(firstName,lastName,age)
-  {
     let person={
-      firstName,
-      lastName,
-      age,
+      firstName : 'Falgun',
+      lastName : 'Mahajan',
+      age : 24,
       isAdult()
       {
         return this.age>=18
       }
     };
-    display(person);
-    display(person.isAdult())
-    display(Object.keys(person));
-  }
-  registerUser('Falgun', 'Mahajan',25)
+    for (var propertyName in person)
+    {
+      display(propertyName);
+    }
 })();
