@@ -2,9 +2,15 @@
 (function() {
 
     let person={
+      name:
+    {
       firstName : 'Falgun',
-      lastName : 'Mahajan',
+      lastName : 'Mahajan'},
       age : 24,
     };
-  display(Object.getOwnPropertyDescriptor(person,"firstName"));
+    Object.defineProperty(person,'name', {writable:false})
+    Object.freeze(person.name)
+  person.name.firstName="Mayuri";
+  display(person.name);
+
 })();
