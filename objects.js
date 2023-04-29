@@ -21,3 +21,11 @@ let x = obj2.getAge.bind(obj1)
 x('dasf')
 let y=display.bind(obj1)
 y()
+let person= {
+    name:"Falgun",
+    test:function()
+    {
+        console.log(this.name)
+    }
+};
+
