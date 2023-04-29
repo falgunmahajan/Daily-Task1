@@ -12,6 +12,7 @@
         return this.age>=18
       }
     };
+    display(person);
     display(person.isAdult())
     display(Object.keys(person));
   }
