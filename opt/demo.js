@@ -2,11 +2,26 @@
 (function() {
 
     let person={
-      firstName : 'Falgun',
-      lastName : 'Mahajan',
+      name:
+      {
+        firstName : 'Falgun',
+        lastName : 'Mahajan'
+      },
       age : 24,
     };
-    Object.defineProperty(person,'firstName', {configurable:false})
-    delete person.firstName;
-    display(person);
+    Object.defineProperty(person, 'fullName', {
+      get : function(){
+        return this.name.firstName+ "  " +this.name.lastName;
+      },
+      set: function(value){
+        var nameParts= value.split(' ');
+        this.name.firstName = nameParts[0];
+        this.name.lastName = nameParts[1];
+      }
+    });
+    person.fullName="Manas Mahajan"
+    display(person.fullName);
+    display(person.name.firstName);
+    display(person.name.lastName);
+
 })();
