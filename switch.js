@@ -53,7 +53,24 @@ function forgetABreak()
         default:
                 console.log("Unknown Product");
                 break;
-        
     }
-
+}
+function strictComparison()
+{
+    let productId = "2";
+    switch(productId)
+    {
+        case 1:
+            console.log("HL Road Frame=Black, 58");
+            break;
+        case 2:
+            console.log("Sport-100 Helmet, Red");
+            break;
+        case 3:
+            console.log("Mountain Bike Socks, M");
+            break;
+        default:
+                console.log("Unknown Product");
+                break;
+    }
 }
