@@ -74,3 +74,35 @@ function strictComparison()
                 break;
     }
 }
+function blockScopeFix()
+{
+    let productId = 2;
+    switch(productId)
+    {
+        case 1:
+          { 
+             let message = "HL Road Frame=Black, 58";
+            console.log(message);
+            break;
+        }
+        case 2:
+            {
+                let message = "Sport-100 Helmet, Red";
+            console.log(message);
+            break;
+        }
+            
+        case 3:
+            {
+                let message = "Mountain Bike Socks, M";
+            console.log(message);
+            break;
+        }
+        default:
+           { 
+            let message = "Unknown Product";
+                console.log(message);
+                break;
+            }
+    }
+}
