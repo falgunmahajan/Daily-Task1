@@ -8,6 +8,6 @@ Person.prototype.age = 29;
   let manas = new Person('Manas', 'Mahajan');
   display(manas.__proto__);
   display(manas.__proto__.__proto__);
-  display(Person.prototype);
+  
   display(manas.__proto__.__proto__.__proto__);
 })();
