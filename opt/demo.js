@@ -32,7 +32,6 @@
  display(mayuri);
  mayuri.enroll('CS205');
  mayuri.enroll('MA101');
- mayuri.enroll('PS101');
  display(mayuri.getCourses())
  display(mayuri.__proto__);
  display(mayuri.__proto__.__proto__);
