@@ -1,13 +1,39 @@
 'use strict'; 
 (function() {
-  function Person(firstName, lastName){
+  function Person(firstName, lastName,age){
     this.firstName = firstName;
     this.lastName = lastName;
+    this.age=age;
+    Object.defineProperty(this, 'fullName', {
+    get : function(){
+      return this.firstName+" "+this.lastName;
+    },
+    enumerable:true
+  });
   }
-Person.prototype.age = 29;
-  let manas = new Person('Manas', 'Mahajan');
-  display(manas.__proto__);
-  display(manas.__proto__.__proto__);
-  
-  display(manas.__proto__.__proto__.__proto__);
+ function Student(firstName, lastName, age)
+ {
+  Person.call(this, firstName,lastName,age)
+  this.enrolledCourses=[],
+  this.enroll=function(courseId)
+  {
+    this.enrolledCourses.push(courseId)
+  };
+  this.getCourses=function(){
+    return this.fullName+ "'s enrolled courses are: "+ +this.enrolledCourses.join(',');
+  };
+ };
+ display(Student.prototype.constructor)
+ Student.prototype=Object.create(Person.prototype)
+ display(Student.prototype.constructor)
+ Student.prototype.constructor=Student;
+ display(Student.prototype.constructor)
+ let mayuri=new Student('Mayuri','Mahajan',25);
+ display(mayuri);
+ mayuri.enroll('CS205');
+ mayuri.enroll('MA101');
+ mayuri.enroll('PS101');
+ display(mayuri.getCourses())
+ display(mayuri.__proto__);
+ display(mayuri.__proto__.__proto__);
 })();
