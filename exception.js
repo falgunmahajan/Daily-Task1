@@ -45,27 +45,113 @@
 //     console.log("In  the finally block");
 // }
 // })();
-function throwError()
+// function throwError()
+// {
+//     let result;
+// try{
+//     result=x/10;
+// }
+// catch(error)
+// {
+//    throw{
+//     "message":"In this the following error occured"+error.message,
+//     "name":"CustomError"
+//    };
+// }
+// }
+// (function()
+// {
+//     try{
+//         throwError();
+//     }
+//     catch(error)
+//     {
+//         console.log(error.message+ " -Error type" +error.name);
+//     }
+// })();
+function handleError(error)
+{
+    switch(error.name)
+    {
+        case 'ReferenceError':
+            console.log('Reference Error: '+error.message);
+            break;
+        case 'RangeError':
+            console.log('Range Error: '+error.message);
+            break;
+        case 'TypeError':
+            console.log('Type Error: '+error.message);
+            break;
+        case 'URIError':
+            console.log('URI Error: '+error.message);
+            break;
+        case 'SyntaxError':
+            console.log('Syntax Error'+error.message);
+            break;
+        case 'EvalError':
+            console.log('Evaluation Error'+error.message);
+            break;
+        default:
+            console.log('Error Type:' +error.name+" Message: "+error.message);
+            break;
+    }
+};
+function referenceError()
 {
     let result;
-try{
-    result=x/10;
+    try{
+        result = x/10;
+    }
+    catch (error)
+    {
+        handleError(error);
+    }
 }
-catch(error)
+function rangeError()
 {
-   throw{
-    "message":"In this the following error occured"+error.message,
-    "name":"CustomError"
-   };
+    let result = 0;
+    try{
+        result.toPrecision(200);
+    }
+    catch (error)
+    {
+        handleError(error);
+    }
 }
+function typeError()
+{
+    let result = 0;
+    try{
+        result.toUpperCase();
+    }
+    catch (error)
+    {
+        handleError(error);
+    }
 }
-(function()
+function uriError()
+{
+    let uri = "http://www.netinc.com/path%%%/file name";
+    try{
+        decodeURI(uri);
+    }
+    catch (error)
+    {
+        handleError(error);
+    }
+}
+function syntaxError()
 {
     try{
-        throwError();
+        let sum = eval("alert('Hello)");
     }
-    catch(error)
+    catch (error)
     {
-        console.log(error.message+ " -Error type" +error.name);
+        handleError(error);
     }
-})();
+}
+referenceError();
+rangeError();
+typeError();
+uriError();
+syntaxError();
