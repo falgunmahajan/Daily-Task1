@@ -1,0 +1,10 @@
+console.log(Number.isInteger(""));
+console.log(Number.isInteger(25));
+console.log(Number.isInteger(25.3));
+console.log(Number.isInteger(25.0));
+console.log(Number.isInteger(null));
+console.log(Number.isInteger(Infinity));
+console.log(9007199254740992+1);
+console.log(9007199254740992+5);
+console.log(Number.MAX_SAFE_INTEGER);
+console.log(Number.MIN_SAFE_INTEGER);
